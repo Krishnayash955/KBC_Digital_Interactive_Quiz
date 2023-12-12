@@ -1,0 +1,101 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+  background-color:rgb(104, 104, 255);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#quiz-container {
+  background-color:aqua;
+  border-radius: 10px;
+  padding: 60px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-align: center;
+  border-style:solid;
+}
+#quizcomp-container {
+  text-align: center;
+}
+#question-container {
+  margin-bottom: 20px;
+}
+#score-container {
+  font-size: 19px;
+}
+#message-container {
+  color: red;
+  font-size: 25px;
+}
+.option {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color:rgb(192, 255, 67);
+  border-color:black;
+  border-radius: 10px;
+  border-width: 0.01px;
+}
+#next-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color:yellow;
+  border-color:black;
+  border-radius: 10px;
+  border-width: 0.1px;
+}
+#next-btn:hover {
+  background-color:chartreuse;
+}
+#lifeline-btn{
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color:yellow;
+  border-color:black;
+  border-radius: 10px;
+  border-width: 0.1px;
+}
+#lifeline-btn:hover {
+  background-color:chartreuse;
+}
+#restart-btn{
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color:yellow;
+  border-color:black;
+  border-radius: 10px;
+  border-width: 0.1px;
+}
+#restart-btn:hover {
+  background-color: chartreuse;
+}
+.correct {
+  background-color:lime;
+  color:black;
+  border-color:black; 
+}
+.wrong {
+  background-color:orangered;
+  color: #fff; 
+}
+#start-btn{
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 140px;
+  cursor: pointer;
+  background-color:yellow;
+  border-color:black;
+  border-radius: 10px;
+  border-width: 0.1px;
+}

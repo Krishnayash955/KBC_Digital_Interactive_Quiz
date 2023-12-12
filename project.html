@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>KBC</h1>
+        <img src="E:\MSRIT22-26\intership\project\kbc.jpeg" width="400px" height="200px">
+        <button id="start-btn" onclick="startQuiz()" style="display:block;">Start Quiz</button>
+        <div id="score-container" style="display:none;">
+            <p><strong>Score:</strong><span id="score">0</span></p>
+            <p><strong>Earnings: $</strong><span id="earnings">0</span></p>
+        </div>
+        <div id="message-container" style="display: none;">
+            <p><strong>Wrong answer!</strong></p>
+        </div>
+        <div id="quizcomp-container" style="display: none;">
+            <div id="question-container">
+                <h3 id="question"></h3>
+            </div>
+            <div id="options-container">
+                <button class="option" onclick="checkAnswer(0)">1</button>
+                <button class="option" onclick="checkAnswer(1)">2</button>
+                <button class="option" onclick="checkAnswer(2)">3</button>
+                <button class="option" onclick="checkAnswer(3)">4</button>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+            <button id="lifeline-btn" onclick="useLifeline()">50-50 Lifeline</button>
+        </div>
+        <button id="restart-btn" style="display: none;" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
